@@ -7,7 +7,16 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "vue": "^3.2.31"
+    "@apollo/client": "^3.6.9",
+    "@vue/apollo-composable": "^4.0.0-alpha.18",
+    "@vue/apollo-util": "^4.0.0-alpha.18",
+    "auth0-js": "^9.19.0",
+    "events": "^3.3.0",
+    "graphql": "^16.5.0",
+    "graphql-tag": "^2.12.6",
+    "subscriptions-transport-ws": "^0.11.0",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
