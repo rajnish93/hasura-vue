@@ -1,10 +1,11 @@
 {
   "name": "vue-project",
   "version": "0.0.0",
+  "author": "Rajnish Singh <rsingh@enlil.com>",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 5050"
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
@@ -15,11 +16,25 @@
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
     "subscriptions-transport-ws": "^0.11.0",
-    "vue": "^3.2.31",
-    "vue-router": "^4.0.16"
+    "axios": "^0.21.1",
+    "pinia": "^2.0.11",
+    "@quasar/extras": "^1.0.0",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
-    "vite": "^2.9.1"
+    "eslint": "^8.10.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "eslint-config-prettier": "^8.1.0",
+    "prettier": "^2.5.1",
+    "@quasar/app-vite": "^1.0.0",
+    "autoprefixer": "^10.4.2"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
   }
 }
